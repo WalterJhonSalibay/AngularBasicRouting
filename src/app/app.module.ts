@@ -9,7 +9,7 @@ import {HomepageComponent} from "./components/homepage/homepage.component";
 import {LoginComponent} from './components/login/login.component';
 import {SignupComponent} from './components/signup/signup.component';
 import {DisplayhelloworldComponent} from "./components/displayhelloworld/displayhelloworld.component";
-
+import {ShowhellobuttonComponent} from "./components/showhellobutton/showhellobutton.component";
 
 const routes: Routes = [
 
@@ -17,33 +17,35 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'displayhelloworld', component: DisplayhelloworldComponent},
+  {path: 'showhellobutton', component: ShowhellobuttonComponent},
 
 ];
 
 @NgModule({
- imports:[
-    CommonModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    RouterModule.forRoot(routes, {enableTracing: true}),
-	],
-
-	 declarations: [
-      AppComponent,
-	  LoginComponent,
-	  SignupComponent,
-	  DisplayhelloworldComponent
-
-  ],
-  providers: [
-    provideAnimationsAsync(),
-    ],
-
   bootstrap: [
     AppComponent
   ],
 
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    DisplayhelloworldComponent,
+    ShowhellobuttonComponent
+
+  ],
   exports: [RouterModule],
+
+  imports: [
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, {enableTracing: true}),
+  ],
+
+  providers: [
+    provideAnimationsAsync(),
+  ],
 
 })
 
