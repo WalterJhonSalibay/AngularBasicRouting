@@ -1,1 +1,42 @@
-<p>displayname works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Button</title>
+    <style>
+        label {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        #toggle-message {
+            display: none;
+        }
+
+        #toggle-message:checked + #message {
+            display: block;
+        }
+
+        #message {
+            display: none;
+            margin-top: 10px;
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="toggle-message">Click me</label>
+    <input type="checkbox" id="toggle-message" />
+
+    <div id="message">Hello! I'm Walter John G. Salibay</div>
+
+</body>

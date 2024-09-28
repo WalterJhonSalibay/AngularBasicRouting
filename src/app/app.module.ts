@@ -10,6 +10,7 @@ import {LoginComponent} from './components/login/login.component';
 import {SignupComponent} from './components/signup/signup.component';
 import {DisplayhelloworldComponent} from "./components/displayhelloworld/displayhelloworld.component";
 import {ShowhellobuttonComponent} from "./components/showhellobutton/showhellobutton.component";
+import {DisplaynameComponent} from "./components/displayname/displayname.component";
 
 const routes: Routes = [
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent},
   {path: 'displayhelloworld', component: DisplayhelloworldComponent},
   {path: 'showhellobutton', component: ShowhellobuttonComponent},
+  {path: 'displayname', component: DisplaynameComponent},
 
 ];
 
@@ -41,6 +43,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes, {enableTracing: true}),
+    DisplaynameComponent,
   ],
 
   providers: [
