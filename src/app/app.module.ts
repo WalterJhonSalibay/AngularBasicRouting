@@ -8,12 +8,15 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {HomepageComponent} from "./components/homepage/homepage.component";
 import {LoginComponent} from './components/login/login.component';
 import {SignupComponent} from './components/signup/signup.component';
+import {DisplayhelloworldComponent} from "./components/displayhelloworld/displayhelloworld.component";
+
 
 const routes: Routes = [
 
   {path: '', component: HomepageComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
+  {path: 'displayhelloworld', component: DisplayhelloworldComponent},
 
 ];
 
@@ -28,7 +31,9 @@ const routes: Routes = [
 	 declarations: [
       AppComponent,
 	  LoginComponent,
-	  SignupComponent
+	  SignupComponent,
+	  DisplayhelloworldComponent
+
   ],
   providers: [
     provideAnimationsAsync(),
