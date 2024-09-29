@@ -1,1 +1,40 @@
-<p>simpleform works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+</head>
+<body>
+
+<h1>Input Form</h1>
+
+<form id="myForm" onsubmit="displayData(event)">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Submitted Data:</h2>
+<p id="output"></p>
+
+<script>
+  function displayData(event) {
+    event.preventDefault(); // Prevent the form from refreshing the page
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    // Display the submitted data
+    document.getElementById('output').innerText = `Name: ${name}, Email: ${email}`;
+  }
+</script>
+
+</body>
+</html>
+
