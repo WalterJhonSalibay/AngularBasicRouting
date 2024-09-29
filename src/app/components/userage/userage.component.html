@@ -1,1 +1,31 @@
-<p>userage works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+</head>
+<body>
+
+<h1>Age Calculator</h1>
+
+<label for="birthYear">Enter your birth year:</label><br>
+<input type="number" id="birthYear" name="birthYear" required><br><br>
+
+<button onclick="calculateAge()">Calculate Age</button>
+
+<h2>Your Age:</h2>
+<p id="ageOutput"></p>
+
+<script>
+  function calculateAge() {
+    const birthYear = document.getElementById('birthYear').value;
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
+
+    document.getElementById('ageOutput').innerText = age >= 0 ? `You are ${age} years old.` : "Invalid birth year!";
+  }
+</script>
+
+</body>
+</html>
