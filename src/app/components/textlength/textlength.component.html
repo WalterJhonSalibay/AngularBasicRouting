@@ -1,1 +1,30 @@
-<p>textlength works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Length Display</title>
+</head>
+<body>
+
+<h1>Find the Length of a String</h1>
+
+<label for="userString">Enter a string:</label><br>
+<input type="text" id="userString" required><br><br>
+
+<button onclick="showLength()">Show Length</button>
+
+<h2>String Length:</h2>
+<p id="lengthOutput"></p>
+
+<script>
+  function showLength() {
+    const userString = document.getElementById('userString').value;
+    const length = userString.length;
+    document.getElementById('lengthOutput').innerText = `The length of the string is: ${length}`;
+  }
+</script>
+
+</body>
+</html>
+
