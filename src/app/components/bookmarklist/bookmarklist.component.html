@@ -1,1 +1,24 @@
-<p>bookmarklist works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL to Anchor Tag</title>
+  <link rel="stylesheet" href="bookmarklist.component.css">
+</head>
+<body>
+<div class="url-container">
+  <h1>URL to Anchor Tag Converter</h1>
+  <label for="urlInput">Enter a URL:</label>
+  <input type="url" id="urlInput" placeholder="https://example.com" required>
+  <button onclick="addURL()">Add URL</button>
+
+  <div id="urlList">
+    <h3>Your URLs:</h3>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

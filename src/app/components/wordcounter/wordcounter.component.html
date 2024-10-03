@@ -1,1 +1,24 @@
-<p>wordcounter works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Count</title>
+  <link rel="stylesheet" href="wordcounter.component.css">
+</head>
+<body>
+<div class="word-counter-container">
+  <h1>Word Counter</h1>
+
+  <label for="textInput">Enter a sentence or phrase:</label>
+  <textarea id="textInput" rows="5" placeholder="Type your text here..."></textarea>
+
+  <button onclick="countWords()">Count Words</button>
+
+  <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
