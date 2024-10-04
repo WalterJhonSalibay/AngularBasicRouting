@@ -44,6 +44,11 @@ import {
   CompoundinterestcalculatorComponent
 } from "./components/compoundinterestcalculator/compoundinterestcalculator.component";
 import {FibonaccigeneratorComponent} from "./components/fibonaccigenerator/fibonaccigenerator.component";
+import {CurrencyformatterComponent} from "./components/currencyformatter/currencyformatter.component";
+import {OddsumcalculatorComponent} from "./components/oddsumcalculator/oddsumcalculator.component";
+import {UppercasegreetingComponent} from "./components/uppercasegreeting/uppercasegreeting.component";
+import {DivisiblecheckerComponent} from "./components/divisiblechecker/divisiblechecker.component";
+import {RandomqoutedisplayComponent} from "./components/randomqoutedisplay/randomqoutedisplay.component";
 
 const routes: Routes = [
 
@@ -85,7 +90,11 @@ const routes: Routes = [
   {path: 'interestcalculator', component: InterestcalculatorComponent},
   {path: 'compoundinterestcalculator', component: CompoundinterestcalculatorComponent},
   {path: 'fibonnacigenerator', component: FibonaccigeneratorComponent},
-
+  {path: 'currencyformatter', component: CurrencyformatterComponent},
+  {path: 'oddsumcalculator', component: OddsumcalculatorComponent},
+  {path: 'randomqoutedisplay', component: RandomqoutedisplayComponent},
+  {path: 'uppercasegreeting', component: UppercasegreetingComponent},
+  {path: 'divisiblechecker', component: DivisiblecheckerComponent}
 
 ];
 

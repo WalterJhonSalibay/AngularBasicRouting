@@ -1,1 +1,31 @@
-<p>currencyformatter works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Formatter</title>
+  <link rel="stylesheet" href="currencyformatter.component.css">
+</head>
+<body>
+<div class="currency-formatter-container">
+  <h1>Currency Formatter</h1>
+
+  <label for="number">Enter Amount:</label>
+  <input type="number" id="number" placeholder="Enter a number" />
+
+  <label for="currency">Select Currency:</label>
+  <select id="currency">
+    <option value="USD">Dollar (USD)</option>
+    <option value="PHP">Philippine Peso (PHP)</option>
+    <option value="EUR">Euro (EUR)</option>
+  </select>
+
+  <button onclick="formatCurrency()">Format as Currency</button>
+
+  <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
