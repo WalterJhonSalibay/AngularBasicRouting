@@ -49,6 +49,11 @@ import {OddsumcalculatorComponent} from "./components/oddsumcalculator/oddsumcal
 import {UppercasegreetingComponent} from "./components/uppercasegreeting/uppercasegreeting.component";
 import {DivisiblecheckerComponent} from "./components/divisiblechecker/divisiblechecker.component";
 import {RandomqoutedisplayComponent} from "./components/randomqoutedisplay/randomqoutedisplay.component";
+import {AlphabetComponent} from "./components/alphabet/alphabet.component";
+import {OnetotenComponent} from "./components/onetoten/onetoten.component";
+import {HyperlinkComponent} from "./components/hyperlink/hyperlink.component";
+import {DisplayimageComponent} from "./components/displayimage/displayimage.component";
+import {ParagraphComponent} from "./components/paragraph/paragraph.component";
 
 const routes: Routes = [
 
@@ -94,7 +99,12 @@ const routes: Routes = [
   {path: 'oddsumcalculator', component: OddsumcalculatorComponent},
   {path: 'randomqoutedisplay', component: RandomqoutedisplayComponent},
   {path: 'uppercasegreeting', component: UppercasegreetingComponent},
-  {path: 'divisiblechecker', component: DivisiblecheckerComponent}
+  {path: 'divisiblechecker', component: DivisiblecheckerComponent},
+  {path: 'alphabet', component: AlphabetComponent},
+  {path: 'onetoten', component: OnetotenComponent},
+  {path: 'hyperlink', component: HyperlinkComponent},
+  {path: 'displayimage', component: DisplayimageComponent},
+  {path: 'paragraph', component: ParagraphComponent}
 
 ];
 
